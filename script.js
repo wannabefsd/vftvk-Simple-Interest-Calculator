@@ -1,7 +1,16 @@
 function compute()
 {
-    var = minvalue=1 maxvalue=20 step=0.25
-    p = document.getElementById("principal").value;
+        p = document.getElementById("principal").value;
+    var principal = document.getElementById("principal").value;
+    var rate = document.getElementById("years").value;
+    var years = document.getElementById("years").value;
+    var interest = principal * years * rate/100;
+    var year = new Date().getFullYear()+parseInt(years);
+    
+    function updateRate()
+    {
+        var rateval = document.getElementById("rate").value;
+        document.getElementById("rate_val").innerText=rateval;
     
 }
         
