@@ -7,7 +7,7 @@ function compute()
 		principal.focus();
 		return false;
     }
-    var  r = document.getElementById("rate").value / 10;
+    var  r = document.getElementById("rate").value;
     if (r==0) {
     	r = 10;
     }
