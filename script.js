@@ -11,6 +11,7 @@ function compute()
     {
         var rateval = document.getElementById("rate").value;
         document.getElementById("rate_val").innerText=rateval;
-        output.innerText = this.value
+    slider.oninput = function()
+  output.innerHTML = this.value;
 }
         
